@@ -1,0 +1,31 @@
+{
+    "loginPage": {
+        "userName": "#username",
+        "password": "#password",
+        "loginButton": ".cff0ff2c6 > .cf4ff3b5d",
+        "forgorPasswordLInk": ".c97fe4834 > .c4a8e5b56",
+        "getStaredLink": ".cdf38eeeb > .c4a8e5b56",
+        "loginHelpLink": "#loginHelp",
+        "contactUsLink": "#contactUs"
+    },
+    "accountsPage": {
+        "accountHolderName": ".r-15yupfm > .css-901oao",
+        "userNameLabel": ".r-1jkjb > :nth-child(2) > .css-901oao",
+        "dashBoardLink": ".r-14lw9ot > :nth-child(2) > :nth-child(1) > .r-6koalj > .r-18u37iz > .css-1dbjc4n > .css-901oao",
+        "accountsLink": ":nth-child(2) > :nth-child(3) > .r-6koalj > .r-1mknmhr > .css-1dbjc4n > .css-901oao",
+        "txnHistoryLink": ":nth-child(5) > .r-1loqt21 > .r-6koalj > .r-1mknmhr > .css-1dbjc4n > .css-901oao",
+        "welcomBanner": ".r-1ifxtd0 > .r-13awgt0 > .css-901oao",
+        "transferButton": ".r-11c0sde > .r-1wtj0ep > :nth-child(1) > .css-1dbjc4n",
+        "withdrawButton": ".r-1wtj0ep > .r-1ow6zhx > .css-1dbjc4n",
+        "depositButton": ".r-1wtj0ep > :nth-child(3) > .css-1dbjc4n",
+        "accountType": ":nth-child(1) > .r-14lw9ot > .r-pezta > .r-13qz1uu > :nth-child(2) > :nth-child(1) > .r-6koalj > .css-1dbjc4n > .css-901oao",
+        "accountName": ":nth-child(1) > .r-14lw9ot > :nth-child(2) > .r-136ojw6 > .r-bnwqim > :nth-child(2) > .css-1dbjc4n > .css-901oao",
+        "accountNumber": ":nth-child(1) > .r-14lw9ot > :nth-child(2) > .r-136ojw6 > :nth-child(2) > .css-901oao",
+        "accountNAV": ":nth-child(1) > .r-14lw9ot > :nth-child(3) > .r-eqz5dr > :nth-child(1) > :nth-child(2) > .css-901oao",
+        "accountBalance": ":nth-child(1) > .r-14lw9ot > :nth-child(3) > .r-eqz5dr > :nth-child(2) > :nth-child(2) > .css-901oao",
+        "accountPandL": ":nth-child(1) > .r-14lw9ot > :nth-child(3) > .r-eqz5dr > :nth-child(3) > :nth-child(2) > .css-901oao",
+        "accountMarginUsedPercent": ":nth-child(1) > .r-14lw9ot > :nth-child(3) > .r-5flfrz > .r-1wtj0ep > :nth-child(1) > .r-1awozwy > :nth-child(2) > .css-901oao",
+        "accountMarginAvailable": ":nth-child(1) > .r-14lw9ot > :nth-child(3) > .r-5flfrz > .r-1wtj0ep > :nth-child(2) > :nth-child(2) > .css-901oao"
+
+    }
+}
