@@ -31,4 +31,38 @@ describe("Accounts page tests", () => {
     accountsPage.assertTxnHistoryPageNavigation();
     cy.go("back");
   });
+
+  it("Assert account details", () => {
+    cy.visit("/");
+    cy.log("In this test");
+    accountsPage.getAccountDetails();
+    cy.get("@accountType").then(accountType => {
+      expect(accountType).to.be.eq("v20");
+    });
+
+    cy.get("@accountType").then(accountType => {
+      expect(accountType).to.be.eq("v20");
+    });
+    cy.get("@accountName").then(accountName => {
+      expect(accountName).to.be.eq("DemoTest");
+    });
+    cy.get("@accountNumber").then(accountNumber => {
+      expect(accountNumber).to.be.eq("101-004-27768358-002");
+    });
+    cy.get("@accountNAV").then(accountNAV => {
+      expect(accountNAV).to.contain("£9");
+    });
+    cy.get("@accountBalance").then(accountBalance => {
+      expect(accountBalance).to.contain("£9");
+    });
+    cy.get("@accountPandL").then(accountPandL => {
+      expect(accountPandL).to.contain("£");
+    });
+    cy.get("@accountMarginUsedPercent").then(accountMarginUsedPercent => {
+      expect(accountMarginUsedPercent).to.contain("%");
+    });
+    cy.get("@accountMarginAvailable").then(accountMarginAvailable => {
+      expect(accountMarginAvailable).to.contain("£9");
+    });
+  });
 });

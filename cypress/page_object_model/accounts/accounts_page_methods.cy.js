@@ -55,4 +55,38 @@ export class AccountsPage {
     cy.get(pageLocators.accountsPage.txnHistoryLink).click();
     cy.url().should("eq", "https://hub.oanda.com/transaction-history");
   }
+
+  getAccountDetails() {
+    cy.get(pageLocators.accountsPage.accountType).then(element => {
+      cy.wrap(element.text()).as("accountType");
+    });
+
+    cy.get(pageLocators.accountsPage.accountName).then(element => {
+      cy.wrap(element.text()).as("accountName");
+    });
+
+    cy.get(pageLocators.accountsPage.accountNumber).then(element => {
+      cy.wrap(element.text()).as("accountNumber");
+    });
+
+    cy.get(pageLocators.accountsPage.accountNAV).then(element => {
+      cy.wrap(element.text()).as("accountNAV");
+    });
+
+    cy.get(pageLocators.accountsPage.accountBalance).then(element => {
+      cy.wrap(element.text()).as("accountBalance");
+    });
+
+    cy.get(pageLocators.accountsPage.accountPandL).then(element => {
+      cy.wrap(element.text()).as("accountPandL");
+    });
+
+    cy.get(pageLocators.accountsPage.accountMarginUsedPercent).then(element => {
+      cy.wrap(element.text()).as("accountMarginUsedPercent");
+    });
+
+    cy.get(pageLocators.accountsPage.accountMarginAvailable).then(element => {
+      cy.wrap(element.text()).as("accountMarginAvailable");
+    });
+  }
 }
