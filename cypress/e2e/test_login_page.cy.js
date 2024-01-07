@@ -16,4 +16,9 @@ describe("OANDA Login Page tests", () => {
     // Make sure we are logged in by checking for the welcome banner in the accounts page
     accountsPage.assertAccountHolderName("MUTHU PANDIAN VADIVELU");
   });
+
+  it.only("Sample test to run on gh", () => {
+    // tag: smoke
+    cy.log("Just a sample test to test gh actions");
+  });
 });
