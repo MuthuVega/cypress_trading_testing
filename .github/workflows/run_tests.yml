@@ -1,0 +1,21 @@
+name: Run the tests on gh actions
+
+on:
+  workflow_dispatch: null
+  pull_request: null
+  push: null
+
+jobs:
+  setup-and-run-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 16
+          cache: npm
+      - run: npm ci
+      - name: Run the tests
+        run: npm test
